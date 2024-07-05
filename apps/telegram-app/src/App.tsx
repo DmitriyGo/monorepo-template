@@ -1,10 +1,10 @@
 import { AppRoot, Placeholder } from '@telegram-apps/telegram-ui';
 import { TonConnectButton, useTonAddress, useTonConnectUI } from '@tonconnect/ui-react';
 import WebApp from '@twa-dev/sdk';
-import useTelegramValidation from './hooks/useTelegramValidation';
 import { useEffect } from 'react';
 
 import { TonProofApi } from './api/ton-proof';
+import useTelegramValidation from './hooks/useTelegramValidation';
 import { useTelegramStore } from './store/telegramStore';
 
 import '@repo/ui/styles.css';

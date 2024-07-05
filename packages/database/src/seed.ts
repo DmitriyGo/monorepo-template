@@ -1,6 +1,5 @@
-import { prisma } from './client';
-
 import type { User } from '@prisma/client';
+import prisma from './client';
 
 const DEFAULT_USERS = [
   // Add your own user to pre-populate the database with
@@ -8,7 +7,7 @@ const DEFAULT_USERS = [
     name: 'Tim Apple',
     email: 'tim@apple.com',
   },
-] as Array<Partial<User>>;
+] as Partial<User>[];
 
 (async () => {
   try {

@@ -5,7 +5,13 @@
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT", ".env*"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
-      "env": ["VITE_FRONTEND_URL", "VITE_API_URL", "VITE_TG_BOT_API_KEY", "VITE_IPINFO_KEY"]
+      "env": [
+        "NODE_ENV ",
+        "VITE_FRONTEND_URL",
+        "VITE_API_URL",
+        "VITE_TG_BOT_API_KEY",
+        "VITE_IPINFO_KEY"
+      ]
     },
     "db:migrate:deploy": {},
     "db:push": {},
@@ -13,7 +19,13 @@
     "dev": {
       "cache": false,
       "persistent": true,
-      "env": ["VITE_FRONTEND_URL", "VITE_API_URL", "VITE_TG_BOT_API_KEY", "VITE_IPINFO_KEY"]
+      "env": [
+        "NODE_ENV",
+        "VITE_FRONTEND_URL",
+        "VITE_API_URL",
+        "VITE_TG_BOT_API_KEY",
+        "VITE_IPINFO_KEY"
+      ]
     },
     "generate": {
       "dependsOn": ["^generate"]
